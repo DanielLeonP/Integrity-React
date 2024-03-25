@@ -1,38 +1,151 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: Lato;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.divTable {
+  width: 100%;
+  overflow: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 1vh 0vh 2vh 0vh;
+  padding: 4px;
+}
+
+th {
+  font-size: small;
+  padding: 0.3vh 1.5vh;
+}
+
+.headerTable {
+  background-color: #2b2e74;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin: 8vh 10vw 5vh 10vw;
+  padding: 1%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .8);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container2 {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin: 8vh 25vw 5vh 25vw;
+  padding: 1%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .8);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+
+}
+
+.tableContainer {
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-size: 40px !important;
+  margin: 1.5% !important;
+}
+
+input {
+  width: 40%;
+  padding: 1%;
+  font-size: large;
+  border-radius: 10px;
+  text-align: center;
+  margin: 4% 0 4% 0;
+  border: 20px;
+  outline: none;
+  border: 3px solid #9394ce;
+  color: black;
+  cursor: pointer;
+}
+.search-bar{
+  border-radius: 50px;
+}
+input::placeholder {
+  color: rgb(110, 110, 110);
+  opacity: 1;
+}
+
+input:hover {
+  border-color: #878bff;
+}
+
+input:active {
+  border-color: #6467c2;
+}
+
+
+input[type=submit] {
+  border: 3px solid #7800FF;
+  background-color: #7800FF;
+  border-radius: 20px;
+  margin: 0 30px;
+  justify-content: center;
+  color: white;
+  width: 30%;
+}
+
+input[type=submit]:hover {
+  border: 3px solid #380078;
+  background-color: #380078;
+}
+
+.logoutButton {
+  position: fixed;
+  display: inline-block;
+  top: 13px;
+  right: 20px;
+  z-index: 20;
+}
+
+.dropdown-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  background-color: #54545860;
+  border-radius: 7px;
+  top: 15px;
+  right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  align-items: first baseline;
+  z-index: 20;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.3vw 1vw;
+
+}
+
+.logoutButton :hover {
+  background-color: #91000060;
+}
+
+form label {
+  font-size: larger;
 }
